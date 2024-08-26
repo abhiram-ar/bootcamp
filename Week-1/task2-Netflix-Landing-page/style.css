@@ -110,3 +110,94 @@ nav{
     position: relative;
     background-color: black;
 }
+
+
+section{
+    width: 70vw;
+    margin: auto;
+    padding-top: 2vh ;
+    outline: 1px red solid;
+}
+
+section h2{
+    font-size: 2em;
+    font-weight: 700;
+    font-family: Arial, Helvetica;
+}
+
+section select {
+    background-color: rgba(42, 42, 42, 0.404);
+    color: white;
+    padding: 0.6em 1em;
+    margin-right:1em;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+  
+}
+
+.posters-container{
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 1em;
+    justify-content: space-around;
+}
+
+.poster{
+    width: 15em;
+    height: 20em;
+    outline: 1px red solid;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    
+}
+
+.poster:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.poster img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.features-container{
+    display: flex;
+    gap: 1em;
+    
+    justify-content: space-around;
+}
+
+.feature{
+    outline-color: 1px rgb(0, 255, 162) solid;
+    background: rgb(5,2,64);
+    background: linear-gradient(138deg, rgba(5,2,64,0.7931547619047619) 0%, rgba(65,4,71,0.8099614845938375) 100%);
+    height: 20em;
+    width: 18em;    
+    padding: 1em 2em;
+    border-radius: 1em;
+    position: relative;
+    flex-grow: 0;
+}
+
+.feature h3{
+    color: white;
+}
+
+.feature p{
+    color: rgb(181, 181, 181);
+}
+
+.feature .icon{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    height: 5em;
+    width: 5em;
+    filter: brightness(60%) contrast(200%) hue-rotate(90deg);;
+}
