@@ -140,7 +140,7 @@ section select {
     outline: 1px red solid;
     margin: 2em auto;
     display: flex;  
-    gap: 1em 1em;
+    gap: 1em 2em;
     justify-content: space-around;
 }
 
@@ -163,13 +163,12 @@ section select {
 .rank{
     position: absolute;
     bottom: 0em;
-    left: -0.3em;
+    left: -0.15em;
     z-index: 100;
     color: black;
     font-family: sans-serif;
     font-weight: 900;
     font-size: 7em;
-
     -webkit-text-stroke: 2px silver;
     text-stroke: 2px silver;
 }
