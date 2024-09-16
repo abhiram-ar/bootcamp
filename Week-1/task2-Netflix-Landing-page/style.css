@@ -163,7 +163,7 @@ section select {
 .rank{
     position: absolute;
     bottom: 0em;
-    left: -0.3em;
+    left: -0.3`em;
     z-index: 100;
     color: black;
     font-family: sans-serif;
