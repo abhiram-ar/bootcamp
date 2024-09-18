@@ -258,9 +258,7 @@ section select {
     position: absolute;
     bottom: 1em;
     right: 1em;
-    height: 4em;
-    width: 4em;
-    filter: brightness(60%) contrast(200%) hue-rotate(90deg);;
+
 }
 
 
