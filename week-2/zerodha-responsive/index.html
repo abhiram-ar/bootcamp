@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="./overideStyle.css">
+    <style>
+        *{
+            font-family: Inter, serif;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar flex fixed-->
+    <nav class="navbar navbar-expand-lg  shadow-sm py-3">
+        <div class="container-lg d-lg-flex px-lg-5">
+            
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/zerodhaLogo.png" alt="Bootstrap" height=18rem">
+            </a>
+            
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto d-block d-lg-flex flex-row text-end ">
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Support</a>
+                    <a class="nav-link" aria-current="page" href="#">SignUp</a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+        <!-- <nav>
+        <div class="icon">
+            <img src="assets/zerodhaLogo.png">
+        </div>
+
+        <div class="nav-links ">
+            <a class="text-secondary" href="#">SignUp</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#">Support</a>
+            <img id="handBurger" src="assets/handBurger.png">
+        </div>
+    </nav> -->
+
+    <!-- main body -->
+
+    <div class="container-fluid">
+       
+        <div class="row justify-content-center">
+            <div class="col col-lg-6">
+                <img class="img-fluid mt-5" src="./assets/splashScreen.png" alt="">
+            </div>
+        </div>
+        
+        <div class="row text-center px-5 mt-5">
+            <h1 class="h1 display-5 col dark-900 fw-500">Invest in everything</h1>
+        </div>
+
+        <div class="row text-center px-3 mt-3">
+            <h4 class="h4 lead col dark-900 fw-400">Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</h4>
+        </div>
+
+        <div class="row">
+            <div class="col text-center my-3">
+                <button class="btn btn-lg bg-sky-blue mt-3 fw-400 text-white rounded-1">Sign up for free</button> 
+            </div>
+        </div>
+    </div>
+    
+  
+
+<!-- 
+    
+    <header>
+        <img src="assets/splashScreen.png">
+        <h1>Invest in everything</h1>
+        <h4>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</h4>
+        <button>Sign up for free</button> 
+    </header> -->
+
+    <section class="container-lg d-block d-md-flex  mt-5">
+        <div class="container">
+            
+            <div class="row my-3">
+                <h2 class="dark-900">Trust with confidence</h2>
+            </div>
+
+            <div class="row">
+                <h5 class="h5 dark-900">Customer-first always</h5>
+                <p class="dark-400">That's why 1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.</p>
+            </div>
+
+            <div class="row">
+                <h5 class="h5 dark-900">No spam or gimmicks</h5>
+                <p class="dark-400">No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like.</p>
+            </div>
+
+            <div class="row">
+                <h5 class="h5 dark-900">The Zerodha universe</h5>
+                <p class="dark-400">Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups offer you tailored services specific to your needs.</p>
+            </div>
+
+            <div class="row">
+                <h5 class="h5 dark-900">Do better with money</h5>
+                <p class="dark-400">With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <img class="img-fluid" src="./assets/ecosystem.png" >
+            </div>
+
+            <div class="row justify-content-center text-center my-4 gx-0 ps-3">
+                <a class="col link" href="#">Explore our products →</a>
+                <a class="col link" href="#">Try Kie demo →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="container-md my-5 px-4 justify-content-center">
+        <img src="./assets/testimonials.png" alt="" class="img-fluid">
+    </div>
+
+
+    <!--content section-->
+    <div class="content">
+                
+        <div class="three-five-grid">
+            <section>
+                <h2>Unbeatable pricing</h2>
+                <p>We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</p>
+                <a class="link" href="#">See pricing →</a>
+            </section>
+
+            <div class="perks-container">
+                <div class="perks">
+                    <img src="assets/zero-rs.png">
+                    <p class="description">Free account <br>opening</p>
+                </div>
+
+                <div class="perks">
+                    <img src="assets/zero-rs.png">
+                    <p class="description">Free equity delivery <br>
+                        and direct mutual funds</p>
+                </div>
+
+                <div class="perks">
+                    <img src="assets/twenty-rs.png">
+                    <p class="description">Intraday and <br> F&O</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--open account and varasity section-->
+        <div class="varasity-container">
+            <div> <img src="assets/varasity.png"></div>
+            
+            <div>
+                <h3>Free and open market Education</h3>
+                <p>Varsity, the largest online stock market education book in the world covering everything from the basics to advanced trading.</p>
+                <a class="link" href="#">Varsity →</a>
+                <p>TradingQ&A, the most active trading and investment community in India for all your market related queries.</p>
+                <a class="link" href="#">TradingQ&A →</a>
+            </div>
+        </div>
+
+        <div class="open-account">
+            <h2>Open a Zerodha account</h2>
+            <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
+            <button>Sign up for free</button> 
+        </div>
+
+    </div>
+
+
+    <!--footer session-->
+    <footer>
+        <div class="content">
+
+            <!--list of additioanal liks-->
+            <div class="links-container">
+                <div class="logo-and-socials">
+                    <img src="assets/zerodhaLogo.png" alt="logo">
+                    <p class="copyright"> © 2010 - 2024, Zerodha Broking Ltd.<br>All rights reserved.</p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li class="list-head">Company</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Referral programme</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Zerodha.tech</a></li>
+                        <li><a href="#">Press &amp; media</a></li>
+                        <li><a href="#">Zerodha Cares (CSR)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul >
+                        <li class="list-head">Support</li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Support portal</a></li>
+                        <li><a href="#">Z-Connect blog</a></li>
+                        <li><a href="#">List of charges</a></li>
+                        <li><a href="#">Downloads &amp; resources</a></li>
+                        <li><a href="#">Videos</a></li><li><a href="#">Market overview</a></li>
+                        <li><a href="#" target="_blank">How to file a complaint?</a></li>
+                        <li><a href="#" target="_blank">Status of your complaints</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <ul>
+                        <li class="list-head">Account</li>
+                        <li><a href="#">Open an account</a></li>
+                        <li><a href="#">Fund transfer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--finacial and legal notes-->
+            <div class="legal-notes">
+                <p>
+                Zerodha Broking Ltd.: Member of NSE, BSE​ &amp;​ MCX – SEBI
+                Registration no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
+                Commodity Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001
+                – SEBI Registration no.: INZ000038238 Registered Address: Zerodha
+                Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
+                School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For
+                any complaints pertaining to securities broking please write to
+                <a class="link" href="#">complaints@zerodha.com</a>, for
+                DP related to <a class="link" href="#">dp@zerodha.com</a>. Please
+                ensure you carefully read the Risk Disclosure Document as prescribed by
+                SEBI | ICF
+                </p>
+                <p>
+                Procedure to file a complaint on <a class="link" href="#">SEBI SCORES</a>:
+                Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number,
+                E-mail ID.
+                Benefits: Effective Communication, Speedy redressal of the grievances
+                </p>
+                <p>
+                    <a class="link" href="#">Smart Online Dispute Resolution</a> | <a class="link" href="#">Grievances Redressal Mechanism</a>
+                </p>
+                <p>
+                Investments in securities market are subject to market risks; read all the related documents carefully before investing.
+                </p>
+                <p>
+                Attention investors: 1) Stock brokers can accept securities as margins from clients only by way of pledge in the depository system w.e.f September 01, 2020. 2) Update your e-mail and phone number with your stock broker / depository participant and receive OTP directly from depository on your e-mail and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month.
+                </p>
+                <p>
+                "Prevent unauthorised transactions in your account. Update your mobile
+                numbers/email IDs with your stock brokers. Receive information of your
+                transactions directly from Exchange on your mobile/email at the end of
+                the day. Issued in the interest of investors. KYC is one time exercise
+                while dealing in securities markets - once KYC is done through a SEBI
+                registered intermediary (broker, DP, Mutual Fund etc.), you need not
+                undergo the same process again when you approach another intermediary."
+                Dear Investor, if you are subscribing to an IPO, there is no need to
+                issue a cheque. Please write the Bank account number and sign the IPO
+                application form to authorize your bank to make payment in case of
+                allotment. In case of non allotment the funds will remain in your bank
+                account. As a business we don't give stock tips, and have not authorized
+                anyone to trade on behalf of others. If you find anyone claiming to be
+                part of Zerodha and offering such services, please
+                <a class="link" href="#">create
+                    a ticket here</a>.
+                </p>
+            </div>
+
+
+            <div class="additional-links">
+                <ul>
+                    <li><a href="#">NSE</a></li>
+                    <li><a href="#">BSE</a></li>
+                    <li><a href="#">MCX</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Policies & procedures</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Disclosure</a></li>
+                    <li><a href="#">For investor's attention</a></li>
+                    <li><a href="#">Investor charter</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

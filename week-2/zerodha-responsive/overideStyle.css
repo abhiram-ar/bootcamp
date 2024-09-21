@@ -1,0 +1,36 @@
+*{
+    line-height: 1.4em !important;
+}
+
+.dark-900{
+    color: #424242 !important;
+}
+
+.dark-400{
+    color: #666666 !important;
+}
+
+.dark-100{
+    color: #9b9b9b !important;
+}
+
+.sky-blue{
+    color: #387ed1;
+}
+
+.bg-sky-blue{
+    background-color: #387ed1;
+}
+
+.fw-400{
+    font-weight: 400 !important;
+}
+
+.fw-500{
+    font-weight: 500 !important ;
+}
+
+.link , a:hover{
+    color: #387ed1 !important;
+    text-decoration: none;
+}
