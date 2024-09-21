@@ -1,5 +1,15 @@
 *{
-    line-height: 1.4em !important;
+    line-height: 1.75em !important;
+}
+
+body{
+    background-color: white !important;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .dark-900{
@@ -33,4 +43,30 @@
 .link , a:hover{
     color: #387ed1 !important;
     text-decoration: none;
+}
+
+.bg-wheat{
+    background-color: #fbfbfb !important;
+}
+
+.links-container a, .additional-links a{
+    color: #666;
+    text-decoration: none;
+    
+}
+
+.additional-links a{
+    font-size: 0.8rem;
+}
+
+
+.links-container .list-head{
+    font-size: 1.125rem;
+    font-weight: 500 !important;
+    margin: 0rem 0rem 0.5rem;
+}
+
+.legal-notes{
+    font-size: 0.65rem;
+    color: #9b9b9b;
 }
