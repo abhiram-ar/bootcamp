@@ -138,6 +138,19 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+let temp;
+
+//Email JS Configuration
+function sendEmail(){
+  let parms = {
+    from_name: document.getElementById("from-name").value,
+    message: document.getElementById("user-message").value,
+    reply_to: document.getElementById("user-emailID").value,
+  };
+  emailjs.send("service_9t54m3m","template_44k3axg", parms).then(alert("Email Sent Successfully!"));
+}
+
+
 
 
 // page navigation variables
