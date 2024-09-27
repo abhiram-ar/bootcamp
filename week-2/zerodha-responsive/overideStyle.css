@@ -26,11 +26,11 @@ ul{
 }
 
 .sky-blue{
-    color: #387ed1;
+    color: #387ed1 !important;
 }
 
 .bg-sky-blue{
-    background-color: #387ed1;
+    background-color: #387ed1 !important;
 }
 
 .fw-400{
