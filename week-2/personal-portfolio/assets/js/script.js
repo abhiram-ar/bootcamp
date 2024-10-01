@@ -137,6 +137,10 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+formBtn.addEventListener("mouseover", function () {
+  form.reportValidity();
+});
+
 // add event to form button
 formBtn.addEventListener("click", function (event) {
 
