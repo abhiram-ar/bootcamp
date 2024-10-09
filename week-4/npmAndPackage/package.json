@@ -1,0 +1,18 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "abhiram tst",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"error no file specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nill"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "abhiram",
+  "license": "ISC"
+}
