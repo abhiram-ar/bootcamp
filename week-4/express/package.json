@@ -9,6 +9,7 @@
   "author": "abhiram",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^22.7.5",
     "express": "^4.21.1"
   }
 }
