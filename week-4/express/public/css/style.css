@@ -1,0 +1,12 @@
+h2{
+    color:grey;
+    font-family: cursive;
+}
+
+.card{
+    box-shadow: 1px 1px 10px -5px grey;
+    text-align: center;
+    margin: 50px 100px ;
+    padding: 1em 2em;
+    border-radius: 1em;
+}

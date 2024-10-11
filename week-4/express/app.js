@@ -1,27 +1,47 @@
 const express = require("express");
-//returns a fucntion
+const fs = require("fs");
+const morgan = require("morgan")
+const moviesRouter = require("./router/movieRouter");
+const dotenv = require("dotenv")
 
-const app = express();
-//now app contains a object,which contain a bunch of function
-//for creating and managing the sever
+dotenv.config({path:"./config.env"})
 
+let app = express();
+
+
+//configuaration
+console.log(process.env)
+console.log(app.get("env"));
+const port = process.env.PORT || 3000
+
+
+
+//user defined middleware
+const logger = function(req,res, next){
+  console.log("custom middle ware used")
+  next()
+}
+
+
+//middleware
+app.use(express.json());
+process.env.NODE_ENV === "development" && app.use(morgan("dev")); 
+ app.use(express.static("./public"))
+app.use(logger)
+app.use((req,res,next)=>{
+  req.requestedAt = new Date().toISOString();
+  next()
+})
+
+
+//home route
 app.get("/", (req, res) => {
-  //res.status(200).send("<h1>hello from server</h1>")
-  //Content-type is set as text/html by default
-
-  res.status(200).json({ name: "abhiram", age: 23 });
-  //sending json response, we dont want to stingify,
-  //we can pass the object as it is
-});
-//cb will be called when ever we get a "get" request in root url
-
-
-app.post("/", (req, res) => {
-  console.log("post request is made");
-  res.send("hello from post response route");
+  res.status(200).send("please got to route : /api/v1/movies");
 });
 
-app.listen(3000, () => {
-  console.log("server listning on port 3000");
+app.use("/api/v1/movies", moviesRouter);
+
+
+app.listen(port, () => {
+  console.log("server is listening on port " + port);
 });
-//create a server and also listen for incoming request
