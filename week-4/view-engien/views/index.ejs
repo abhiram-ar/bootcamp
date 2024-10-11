@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/header.ejs")%>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="content text-center">
+      <h1 class="m-4">All Blogs</h1>
+      <div class="container my-4 d-flex justify-content-center">
+        <% if(blogs.length > 0){ %> <% blogs.forEach(blog => {%>
+        <div class="card mx-2 w-50 text-start">
+            <img src="<%= blog.imgURL%>" alt="">
+          <div class="card-body">
+            <H2 class="card-title"><%= blog.title %></H2>
+            <p class="card-text"><%= blog.snippet %></p>
+          </div>
+        </div>
+        <% }) %> <% }else { %>
+        <p>There are no blogs to display</p>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include("./partials/footer.ejs")%>
+  </body>
+</html>
