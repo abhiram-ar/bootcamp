@@ -8,3 +8,6 @@
     
     console.log(path.parse(__dirname)) // returns the last target in path
     console.log(path.parse(__filename))
+
+    let absulutePathToFile = path.join(__dirname, "folder", "file.txt")
+    console.log(absulutePathToFile);

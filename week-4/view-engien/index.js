@@ -8,6 +8,7 @@ app.use(express.static("./public"))
 
 //rotues
 app.get("/", (req, res) => {
+  console.log(req.query)
   res.sendFile("./views/index.html", { root: __dirname });
 });
 

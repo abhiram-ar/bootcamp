@@ -5,4 +5,5 @@ console.log(buff.toJSON());
 console.log(buff.toString());
 
 buff.write("hi")
+console.log(buff.toString());
 console.log(buff);
