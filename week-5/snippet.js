@@ -1,0 +1,1 @@
+db.nonFiction.insertOne({name: "laws of power", price: 600})
