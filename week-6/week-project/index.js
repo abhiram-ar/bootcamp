@@ -1,13 +1,13 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
 const session = require("express-session");
-const dbConnect = require("./config/db")
-const adminRouter = require("./routes/admin")
-const authrouter = require("./routes/auth")
+const dbConnect = require("./config/db");
+const adminRouter = require("./routes/admin");
+const authrouter = require("./routes/auth");
+const userRouter = require("./routes/user");
 
-dbConnect()
+dbConnect();
 const app = express();
-
 
 //middleware
 app.set("view engine", "ejs");
@@ -22,11 +22,10 @@ app.use(
     })
 );
 
-
 //rotues
-app.use("/", authrouter)
-app.use("/", adminRouter)
-
+app.use("/", authrouter);
+app.use("/", adminRouter);
+app.use("/", userRouter);
 
 //server config
 const PORT = process.env.PORT || 3000;
