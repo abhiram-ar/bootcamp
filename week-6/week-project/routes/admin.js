@@ -1,14 +1,32 @@
 const express = require("express");
+const User = require("../models/User");
+const { isAdmin } = require("./../middlewares/auth");
 const bcrypt = require("bcryptjs");
-const User = require("./../models/User");
 
 const router = express.Router();
 
-router.get("/signup", (req, res) => {
-    res.render("auth/signup");
+router.get("/admin/login", (req, res) => {
+    res.render("/login");
 });
 
-router.post("signup", async (req, res) => {
+router.get("/admin/dashboard", isAdmin, async (req, res) => {
+    const users = await User.find({ isAdmin: false });
+    res.render("admin/dashboard", { users });
+});
+
+router.get("/admin/users/search", isAdmin, (req, res) => {
+    const { query } = req.query;
+    const users = User.find({
+        $or: [
+            { username: new RegExp(query, "i") },
+            { email: new RegExp(query, "i") },
+        ],
+        isAdmin: false,
+    });
+    res.render("admin/dashboard", { users });
+});
+
+router.post("/admin/users", isAdmin, async (req, res) => {
     try {
         const { username, email, password } = req.body;
         const hashedPassword = await bcrypt.hash(password, 10);
@@ -18,42 +36,18 @@ router.post("signup", async (req, res) => {
             password: hashedPassword,
         });
         await user.save();
-        res.redirect("/login");
+        res.redirect("admin/dashboard");
     } catch (error) {
-        res.render("auth/signup", { error: "User or email alrready exist" });
+        res.redirect("admin/dashboard");
     }
 });
 
-router.get("/login", (req, res) => {
-    res.render("auth/login");
-});
-
-router.post("/login", async (req, res) => {
+router.delete("admin/users/:id", isAdmin, async (req, res) => {
     try {
-        const { email, password } = req.body;
-        const user = await User.findOne({ email });
-        if (!user) {
-            return res.render("auth/login", { error: "Invalid credentials" });
-        }
-        const isValid = await bcrypt.compare(password, user.password);
-        if (!isValid) {
-            return res.render("auth/login", { error: "Incorrect password" });
-        }
-        req.session.userId = user._id;
-        if (user.isAdmin) {
-            res.redirect("/admin/dashboard");
-        } else {
-            res.redirect("/home");
-        }
+        await User.findByIdAndDelete(req.params.id);
+        res.json({ sucess: true });
     } catch (error) {
-        res.render("auth/login", { error: "An error occured" });
+        res.status(500).json({ sucess: false });
     }
 });
-
-
-app.get("/logout", (req, res)=>{
-    res.session.destroy();
-    res.redirect("/login");
-})
-
 module.exports = router;

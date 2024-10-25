@@ -3,6 +3,7 @@ const dotenv = require("dotenv").config();
 const session = require("express-session");
 const dbConnect = require("./config/db")
 const adminRouter = require("./routes/admin")
+const authrouter = require("./routes/auth")
 
 dbConnect()
 const app = express();
@@ -23,7 +24,8 @@ app.use(
 
 
 //rotues
-app.route("/", adminRouter)
+app.use("/", authrouter)
+app.use("/", adminRouter)
 
 
 //server config
