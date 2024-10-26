@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("./../partials/header.ejs")%>
+    </head>
+    <body>
+        <%-include("./../partials/nav.ejs")%>
+
+        <div class="container-md mt-5">
+            <h3>Admin Dasboard</h3>
+            <div class="container border p-5 justify-content-center">
+                <%- include("./../partials/searchbar.ejs")%>
+
+                <div class="">
+
+                </div>
+
+                <%= users[0]%>
+            </div>
+        </div>
+    </body>
+</html>
