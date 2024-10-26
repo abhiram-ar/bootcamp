@@ -46,7 +46,7 @@
                                         Login
                                     </h2>
                                     <p class="text-white-50 mb-5">
-                                        Please enter your username and password!
+                                        Please enter your email and password!
                                     </p>
 
                                     <div class="input-group mb-3">
@@ -58,11 +58,11 @@
                                                 type="text"
                                                 class="form-control"
                                                 id="floatingInputGroup1"
-                                                placeholder="username"
-                                                name="username"
+                                                placeholder="email"
+                                                name="email"
                                             />
                                             <label for="floatingInputGroup1"
-                                                >username</label
+                                                >email</label
                                             >
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                                 type="password"
                                                 class="form-control"
                                                 id="floatingInputGroup2"
-                                                placeholder="email"
+                                                placeholder="passoword"
                                                 name="password"
                                             />
                                             <label for="floatingInputGroup2"
@@ -84,19 +84,17 @@
                                             >
                                         </div>
                                     </div>
-
-                                    <% if (error) { %>
-                                    <p class="small mb-5 pb-lg-2 text-danger">
-                                        <%= error %> <% } %>
-                                        <button
-                                            data-mdb-button-init
-                                            data-mdb-ripple-init
-                                            class="btn btn-outline-light btn-lg px-5"
-                                            type="submit"
-                                        >
-                                            Login
-                                        </button>
+                                    <p class="small text-danger">
+                                        <% if (error) { %> <%= error %> <% } %>
                                     </p>
+                                    <button
+                                        data-mdb-button-init
+                                        data-mdb-ripple-init
+                                        class="btn btn-outline-light btn-lg px-5"
+                                        type="submit"
+                                    >
+                                        Login
+                                    </button>
                                 </div>
                             </form>
                         </div>

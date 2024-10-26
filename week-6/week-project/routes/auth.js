@@ -5,30 +5,31 @@ const User = require("./../models/User");
 const router = express.Router();
 
 router.get("/signup", (req, res) => {
-    res.render("auth/signup", {error: ""});
+    res.render("auth/signup", { error: "" });
 });
 
 router.post("/signup", async (req, res) => {
     try {
-        console.log("in post singup route");
-        const { username, email, password } = req.body;
+        const { username, email, password, role } = req.body;
         const hashedPassword = await bcrypt.hash(password, 10);
+        const isAdmin = role === "admin" ? true : false;
         const user = new User({
             username,
             email,
             password: hashedPassword,
+            isAdmin,
         });
         console.log(`new user obj` + user);
         await user.save();
         console.log("written to db");
         res.redirect("/login");
     } catch (error) {
-        res.render("auth/signup", { error: "User or email alrready exist" });
+        res.render("auth/signup", { error: "User or email already exist" });
     }
 });
 
 router.get("/login", (req, res) => {
-    res.render("auth/login", {error : ""});
+    res.render("auth/login", { error: "" });
 });
 
 router.post("/login", async (req, res) => {
@@ -43,6 +44,7 @@ router.post("/login", async (req, res) => {
             return res.render("auth/login", { error: "Incorrect password" });
         }
         req.session.userId = user._id;
+        console.log(req.session);
         if (user.isAdmin) {
             res.redirect("/admin/dashboard");
         } else {
@@ -54,8 +56,10 @@ router.post("/login", async (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-    res.session.destroy();
-    res.redirect("/login");
+    //redirect only if session is destroyed
+    req.session.destroy((err) => {
+        res.redirect("/login");
+    });
 });
 
 module.exports = router;

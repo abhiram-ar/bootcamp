@@ -49,6 +49,7 @@
                                         Please enter your username and password!
                                     </p>
 
+                                    <!-- username  -->
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">👤</span>
                                         <div
@@ -67,6 +68,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- email input -->
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">📧</span>
                                         <div
@@ -85,6 +87,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- passowrd input -->
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">🗝️</span>
                                         <div
@@ -94,7 +97,7 @@
                                                 type="password"
                                                 class="form-control"
                                                 id="floatingInputGroup2"
-                                                placeholder="email"
+                                                placeholder="password"
                                                 name="password"
                                             />
                                             <label for="floatingInputGroup2"
@@ -103,18 +106,40 @@
                                         </div>
                                     </div>
 
+                                    <!-- role input -->
+                                    <div
+                                        class="input-group input-group-lg mb-3"
+                                    >
+                                        <label
+                                            class="input-group-text"
+                                            for="inputGroupSelect01"
+                                            >Role</label
+                                        >
+                                        <select
+                                            class="form-select"
+                                            id="inputGroupSelect01"
+                                            name="role"
+                                        >
+                                            <option selected value="user">
+                                                user
+                                            </option>
+                                            <option value="admin">admin</option>
+                                        </select>
+                                    </div>
+
                                     <% if (error) { %>
                                     <p class="small mb-5 pb-lg-2 text-danger">
-                                        <%= error %> <% } %>
-                                        <button
-                                            data-mdb-button-init
-                                            data-mdb-ripple-init
-                                            class="btn btn-outline-light btn-lg px-5"
-                                            type="submit"
-                                        >
-                                            Login
-                                        </button>
+                                        <%= error %>
                                     </p>
+                                    <% } %>
+                                    <button
+                                        data-mdb-button-init
+                                        data-mdb-ripple-init
+                                        class="btn btn-outline-light btn-lg px-5"
+                                        type="submit"
+                                    >
+                                        Login
+                                    </button>
                                 </div>
                             </form>
                         </div>

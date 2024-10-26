@@ -14,8 +14,18 @@ const app = express();
 //middleware
 app.use(morgan("dev"))
 app.set("view engine", "ejs");
+app.use(express.static("public"))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+// Prevent caching
+app.use((req, res, next) => {
+    res.set("Cache-Control", "no-store");
+    next();
+});
+
+
+//session congif
 app.use(
     session({
         secret: "abhiram",
@@ -23,9 +33,14 @@ app.use(
         saveUninitialized: false,
         cookie: { maxAge: 60 * 60 * 1000 }, //1hr
     })
-);
+);  
 
-//rotues
+//dev rotues
+app.use("/test", (req, res)=>{
+    res.render("home", {username:"username"})
+})
+
+//offical routes
 app.use("/", authrouter);
 app.use("/", adminRouter);
 app.use("/", userRouter);
