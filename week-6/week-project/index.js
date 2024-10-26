@@ -5,11 +5,14 @@ const dbConnect = require("./config/db");
 const adminRouter = require("./routes/admin");
 const authrouter = require("./routes/auth");
 const userRouter = require("./routes/user");
+const morgan = require("morgan")
+
 
 dbConnect();
 const app = express();
 
 //middleware
+app.use(morgan("dev"))
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
