@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit User</title>
+        <%- include("./../partials/header.ejs")%>
+    </head>
+    <body>
+        <%- include("./../partials/nav.ejs") %>
+
+        <div class="container-md mt-5">
+            <h3>Admin Dashboard</h3>
+            <div class="container border p-5 justify-content">
+                <h1>Edit User</h1>
+                <form class="w-50 justify-content-center align-items-center " action="/admin/users/edit/<%= user._id %>" method="POST" >
+                    <div class="form-floating mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="floatingInput"
+                            placeholder="<%= user.username%>"
+                            name="username"
+                            value="<%= user.username%>"
+                            required
+                        />
+                        <label for="floatingInput">Username</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="floatingInput"
+                            placeholder="<%= user.email%>"
+                            name="email"
+                            value="<%= user.email%>"
+                            required
+                        />
+                        <label for="floatingInput">Email address</label>
+                    </div>
+
+                    <button class="mt-2" type="submit">Update User</button>
+                </form>
+                <a class="d-block mt-5 " href="/admin/dashboard">Back to Dashboard</a>
+            </div>
+        </div>
+    </body>
+</html>

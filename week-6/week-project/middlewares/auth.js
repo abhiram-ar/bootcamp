@@ -8,8 +8,6 @@ const isAuthenticated = (req, res, next) => {
 };
 
 const isAdmin = async (req, res, next) => {
-    
-    console.log(`in is admin middleware`);
     if (req.session.userId) {
         const user = await User.findById(req.session.userId);
         console.log(`user data` + user);
@@ -17,7 +15,7 @@ const isAdmin = async (req, res, next) => {
             return next();
         }
     }
-    console.log("redrecting");
+
     res.redirect("/login");
 };
 

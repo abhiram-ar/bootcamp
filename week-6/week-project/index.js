@@ -5,16 +5,15 @@ const dbConnect = require("./config/db");
 const adminRouter = require("./routes/admin");
 const authrouter = require("./routes/auth");
 const userRouter = require("./routes/user");
-const morgan = require("morgan")
-
+const morgan = require("morgan");
 
 dbConnect();
 const app = express();
 
 //middleware
-app.use(morgan("dev"))
+app.use(morgan("dev"));
 app.set("view engine", "ejs");
-app.use(express.static("public"))
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -24,7 +23,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
 //session congif
 app.use(
     session({
@@ -33,12 +31,12 @@ app.use(
         saveUninitialized: false,
         cookie: { maxAge: 60 * 60 * 1000 }, //1hr
     })
-);  
+);
 
 //dev rotues
-app.use("/test", (req, res)=>{
-    res.render("home", {username:"username"})
-})
+app.use("/test", (req, res) => {
+    res.render("home", { username: "username" });
+});
 
 //offical routes
 app.use("/", authrouter);

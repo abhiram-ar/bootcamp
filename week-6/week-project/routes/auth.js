@@ -19,7 +19,6 @@ router.post("/signup", async (req, res) => {
             password: hashedPassword,
             isAdmin,
         });
-        console.log(`new user obj` + user);
         await user.save();
         console.log("written to db");
         res.redirect("/login");
@@ -44,7 +43,6 @@ router.post("/login", async (req, res) => {
             return res.render("auth/login", { error: "Incorrect password" });
         }
         req.session.userId = user._id;
-        console.log(req.session);
         if (user.isAdmin) {
             res.redirect("/admin/dashboard");
         } else {

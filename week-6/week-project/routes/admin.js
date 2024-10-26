@@ -14,16 +14,16 @@ router.get("/admin/dashboard", isAdmin, async (req, res) => {
     res.render("admin/dashboard", { users });
 });
 
-router.get("/admin/users/search", isAdmin, (req, res) => {
+router.get("/admin/users/search", isAdmin, async (req, res) => {
     const { query } = req.query;
-    const users = User.find({
+    const users = await User.find({
         $or: [
             { username: new RegExp(query, "i") },
             { email: new RegExp(query, "i") },
         ],
         isAdmin: false,
     });
-    res.render("admin/dashboard", { users });
+    res.render("admin/dashboardSearch", { users, query });
 });
 
 router.post("/admin/users", isAdmin, async (req, res) => {
@@ -42,10 +42,23 @@ router.post("/admin/users", isAdmin, async (req, res) => {
     }
 });
 
-router.delete("admin/users/:id", isAdmin, async (req, res) => {
+router.get("/admin/users/edit/:id", isAdmin, async (req, res) => {
+    const user = await User.findById(req.params.id);
+    res.render("admin/edit", { user });
+});
+
+router.post("/admin/users/edit/:id", isAdmin, async (req, res) => {
+    await User.findByIdAndUpdate(req.params.id, {
+        username: req.body.username,
+        email: req.body.email,
+    });
+    res.redirect("/admin/dashboard");
+});
+
+router.post("/admin/users/delete/:id", isAdmin, async (req, res) => {
     try {
         await User.findByIdAndDelete(req.params.id);
-        res.json({ sucess: true });
+        res.redirect("/admin/dashboard");
     } catch (error) {
         res.status(500).json({ sucess: false });
     }
