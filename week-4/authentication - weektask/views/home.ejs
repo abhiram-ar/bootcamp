@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/header.ejs")%>
+    <body>
+        <%- include("./partials/nav.ejs") %> 
+      
+        
+    <div class="create-blog container-md mt-5">
+      <h2>Welcome Back, <%= username%></h2>
+
+      <form class="container w-75 my-5 text-end">
+        <div class="input-group mb-3">
+          <span class="input-group-text">T</span>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputGroup1"
+              placeholder="Username"
+            />
+            <label for="floatingInputGroup1">Blog Title</label>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">...</span>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputGroup2"
+              placeholder="Username"
+            />
+            <label for="floatingInputGroup2">Blog Snippet</label>
+          </div>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2Disabled"
+            style="height: 200px"></textarea>
+          <label for="floatingTextarea2Disabled">Blog body</label>
+        </div>
+        <button class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+
+
+
+        <footer class="text-center">
+            <p class="text-center">Copyright &copy; Blog AR 2024</p>
+        </footer>
+    </body>
+</html>
