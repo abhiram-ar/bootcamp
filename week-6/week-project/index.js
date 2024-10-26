@@ -6,6 +6,7 @@ const adminRouter = require("./routes/admin");
 const authrouter = require("./routes/auth");
 const userRouter = require("./routes/user");
 const morgan = require("morgan");
+const MongoStore = require("connect-mongo");
 
 dbConnect();
 const app = express();
@@ -30,6 +31,7 @@ app.use(
         resave: false,
         saveUninitialized: false,
         cookie: { maxAge: 60 * 60 * 1000 }, //1hr
+        store: MongoStore.create({ mongoUrl: process.env.CONNECTION_STRING }),
     })
 );
 
