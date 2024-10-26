@@ -1,6 +1,8 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const User = require("./../models/User");
+const isLoggedIn = require("../middlewares/isLoggedIn");
+
 
 const router = express.Router();
 
@@ -27,7 +29,7 @@ router.post("/signup", async (req, res) => {
     }
 });
 
-router.get("/login", (req, res) => {
+router.get("/login",isLoggedIn,  (req, res) => {
     res.render("auth/login", { error: "" });
 });
 
