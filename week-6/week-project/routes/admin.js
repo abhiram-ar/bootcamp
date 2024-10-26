@@ -26,7 +26,7 @@ router.get("/admin/users/search", isAdmin, async (req, res) => {
     res.render("admin/dashboardSearch", { users, query });
 });
 
-router.post("/admin/users", isAdmin, async (req, res) => {
+router.post("/admin/users/create", isAdmin, async (req, res) => {
     try {
         const { username, email, password } = req.body;
         const hashedPassword = await bcrypt.hash(password, 10);
@@ -36,9 +36,9 @@ router.post("/admin/users", isAdmin, async (req, res) => {
             password: hashedPassword,
         });
         await user.save();
-        res.redirect("admin/dashboard");
+        res.redirect("/admin/dashboard");
     } catch (error) {
-        res.redirect("admin/dashboard");
+        res.redirect("/admin/dashboard");
     }
 });
 
