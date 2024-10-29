@@ -43,7 +43,7 @@
                                         type="button"
                                         class="btn btn-danger"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#deleteModal"
+                                        data-bs-target="#deleteModal<%= user._id%>"
                                     >
                                         Delete
                                     </button>
@@ -51,7 +51,7 @@
                                     <!-- Modal -->
                                     <div
                                         class="modal fade"
-                                        id="deleteModal"
+                                        id="deleteModal<%= user._id%>"
                                         tabindex="-1"
                                 
                                     >
@@ -79,7 +79,7 @@
                                                         class="btn btn-secondary"
                                                         data-bs-dismiss="modal"
                                                     >
-                                                        Close
+                                                        No
                                                     </button>
                                                    <form
                                                         action="/admin/users/delete/<%= user._id%>"
@@ -90,7 +90,7 @@
                                                             class="btn btn-danger"
                                                             type="submit"
                                                         >
-                                                            Delete
+                                                            Yes
                                                         </button>
                                                     </form>
                                                 </div>

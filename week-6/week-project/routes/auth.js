@@ -3,12 +3,11 @@ const bcrypt = require("bcryptjs");
 const User = require("./../models/User");
 const isLoggedIn = require("../middlewares/isLoggedIn");
 
-
 const router = express.Router();
 
-router.get("/", (req, res)=>{
-    res.redirect("/login")
-})
+router.get("/", (req, res) => {
+    res.redirect("/login");
+});
 
 router.get("/signup", (req, res) => {
     res.render("auth/signup", { error: "" });
@@ -17,6 +16,20 @@ router.get("/signup", (req, res) => {
 router.post("/signup", async (req, res) => {
     try {
         const { username, email, password, role } = req.body;
+
+        if (
+            typeof email !== "string" ||
+            !/[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}/.test(email)
+        ) {
+            return res.render("auth/signup", { error: "Invalid Email" });
+        }
+
+        if (password.length < 8) {
+            return res.render("auth/signup", {
+                error: "Password should contain atleast 8 charcters",
+            });
+        }
+
         const hashedPassword = await bcrypt.hash(password, 10);
         const isAdmin = role === "admin" ? true : false;
         const user = new User({
@@ -33,13 +46,21 @@ router.post("/signup", async (req, res) => {
     }
 });
 
-router.get("/login",isLoggedIn,  (req, res) => {
+router.get("/login", isLoggedIn, (req, res) => {
     res.render("auth/login", { error: "" });
 });
 
 router.post("/login", async (req, res) => {
     try {
         const { email, password } = req.body;
+
+        if (
+            typeof email !== "string" ||
+            !/[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}/.test(email)
+        ) {
+            return res.render("auth/login", { error: "Invalid Email" });
+        }
+
         const user = await User.findOne({ email });
         if (!user) {
             return res.render("auth/login", { error: "Invalid credentials" });
