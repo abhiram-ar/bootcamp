@@ -6,6 +6,10 @@ const isLoggedIn = require("../middlewares/isLoggedIn");
 
 const router = express.Router();
 
+router.get("/", (req, res)=>{
+    res.redirect("/login")
+})
+
 router.get("/signup", (req, res) => {
     res.render("auth/signup", { error: "" });
 });
