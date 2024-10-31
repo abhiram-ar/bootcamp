@@ -1,0 +1,817 @@
+[33mcommit 0fe28e32512b7e494891ea33d99ea461cd218dc1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 20:16:20 2024 +0530
+
+    completed : validation pending
+
+[33mcommit 93552696a59880253d5cd3d933ea662bed1064f5[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 18:53:44 2024 +0530
+
+    search feature
+
+[33mcommit 6173dfbee261d9597f4c1dfdd489fb5b21498b6d[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 14:05:04 2024 +0530
+
+    search bar
+
+[33mcommit 1025a45aa288038fff7c5de47b33300c104656c8[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 11:42:34 2024 +0530
+
+    user fontend and session
+
+[33mcommit 55064652a12b80fa2757821963a3c53d51afc09d[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 11:41:40 2024 +0530
+
+    user fontend and session mangement
+
+[33mcommit c30ee5c04642b34ed35a4a27e42bd2e4ea81c731[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 09:31:49 2024 +0530
+
+    refactor
+
+[33mcommit 317f959173c0810df78a2b42b8f6455d9b43ed52[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 09:31:18 2024 +0530
+
+    flush
+
+[33mcommit 6048c45597261c34cde14b2680431c4e6cda65b0[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 02:32:38 2024 +0530
+
+    signin page
+
+[33mcommit 9da29b98926fca4243ff1a06f5afb836c4389e8d[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 02:32:26 2024 +0530
+
+    signin and login page
+
+[33mcommit 728d220e9be12121bb495558f7e19cca657f190f[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 01:55:06 2024 +0530
+
+    init
+
+[33mcommit 0fba3b2f7e14b8aa0970d2d18fbe2703f96b6ca7[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 26 01:47:49 2024 +0530
+
+    backend completed
+
+[33mcommit b608028f913e8a83dd982c53ba624d0ad19f5075[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 25 23:46:07 2024 +0530
+
+    auth
+
+[33mcommit ce1596b8618e9e7d6b9837bb675c9bd682d31744[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 25 00:34:39 2024 +0530
+
+    jwt
+
+[33mcommit deecf4f6dd5cd8c987799ed14db9583b1364eaed[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 24 20:50:02 2024 +0530
+
+    init
+
+[33mcommit 98005b56bcaeee0b0e8c2cdfc83ed6bcc5cd9245[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 24 19:44:09 2024 +0530
+
+    refactor
+
+[33mcommit c97520fdd67a0f47488281978fed866750ec15cb[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 24 17:58:35 2024 +0530
+
+    session
+
+[33mcommit 8a0989bd6a411c454c839014c8d791928a8439d2[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 24 10:59:44 2024 +0530
+
+    zod
+
+[33mcommit 3a7c0b4a35506325bcb5b441532d371cf7597dfb[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 23 19:59:00 2024 +0530
+
+    boiler place
+
+[33mcommit 2ece56900220fd2da2f64347c2b8dce2e7693494[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 23 19:39:55 2024 +0530
+
+    init
+
+[33mcommit 60d6d071afdb163a71541c0ae33918e5f4608336[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 23 19:36:52 2024 +0530
+
+    ignore
+
+[33mcommit 2ceb393e6ec9b058837fc92fdcbdee705296e25a[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 23 19:10:25 2024 +0530
+
+    init
+
+[33mcommit a66bba0075ac2cf47d19e691e4b0f2178644ab61[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 23 19:08:27 2024 +0530
+
+    init
+
+[33mcommit 89efa8dbbb2ea732a66523c0dc73f4081b729253[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 23 18:36:55 2024 +0530
+
+    init
+
+[33mcommit 983441ba47853a884c8fb4d5badbbbb552955a8c[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 22 13:16:35 2024 +0530
+
+    test
+
+[33mcommit e236b473c6e773b27e6c9ca0e9508371a6e4bba8[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Oct 21 19:45:34 2024 +0530
+
+    init
+
+[33mcommit 88e7e322045ad8bbd478696d3f8f95b63c65e6ec[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Oct 21 18:48:23 2024 +0530
+
+    db
+
+[33mcommit fa1a50bccbfcf20746ec35d2509c4df1b3daf042[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Oct 20 13:44:10 2024 +0530
+
+    schema definition
+
+[33mcommit 3a27f1584270e36969a235b804ac0c6f544778e3[m
+Merge: 30d01d8 87e3d5e
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 16 10:30:33 2024 +0530
+
+    Merge branch 'main' of https://github.com/abhiram-ar/bootcamp
+
+[33mcommit 30d01d8e2f5d06c7c0fe0caf33d21b5ab13f59cd[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 16 10:29:05 2024 +0530
+
+    init
+
+[33mcommit 87e3d5eb49b7a33b1c4ace36d2a0d6e6b2958530[m
+Author: Abhiram S Sajeev <82314439+abhiram-ar@users.noreply.github.com>
+Date:   Sun Oct 13 01:08:56 2024 +0530
+
+    Delete week-4/authentication/node_modules directory
+
+[33mcommit f7f1aba2ea79891bbb084571c4009d6eab54dd56[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Oct 13 01:07:18 2024 +0530
+
+    completed authentication
+
+[33mcommit b4eb8f73f2ce25aa98fd98d7d12fd88a7278cfc6[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 11 20:31:19 2024 +0530
+
+    final fix
+
+[33mcommit da7a572c17a083f91fe49a944ce0f9214f49694a[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 11 20:21:35 2024 +0530
+
+    finishjed
+
+[33mcommit 82ea4c7ce71fa4afbf4fc6a7d3f370f719469a48[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 11 19:50:53 2024 +0530
+
+    serverside rendering
+
+[33mcommit 7e73e94d616e49e8ee1d82af2e48df11f5f6ff01[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 11 15:20:17 2024 +0530
+
+    init
+
+[33mcommit e4f3f1cdddd9d889ca8fe2c18d1238d31903f438[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 11 15:19:41 2024 +0530
+
+    intt
+
+[33mcommit 0767e724c4231553d2a0a25f6da7c74c149afa57[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Oct 11 15:18:20 2024 +0530
+
+    init
+
+[33mcommit 989d1fb81b97af0c1a62ce19d867cc79b8eaf8b2[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 10 15:50:05 2024 +0530
+
+    rest apis
+
+[33mcommit 1fe0f110e54d80b7d64119afe084c9595d1ffecf[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 10 14:06:21 2024 +0530
+
+    express app
+
+[33mcommit c458ceb0587aeb9c9192de0aefc491f547b04ae1[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 10 11:40:26 2024 +0530
+
+    rest api
+
+[33mcommit 7934c2aa570bfef7cef12ab6a03f3368959599a3[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Oct 10 10:01:34 2024 +0530
+
+    int
+
+[33mcommit ca888dc100ba7d13759586bfb107dbee8f15b0e7[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 9 19:39:20 2024 +0530
+
+    node worker
+
+[33mcommit f137cedf2b9b5a07ab214ea539e18bfb50672231[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 9 18:09:58 2024 +0530
+
+    node pakages
+
+[33mcommit 0350a9d125713566ac1b6c81e64ad4189c87b1cf[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 9 14:14:36 2024 +0530
+
+    server
+
+[33mcommit a374ebc46b5e943567700d10cf14cfcba3c899b6[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 9 11:08:12 2024 +0530
+
+    event loo]
+
+[33mcommit 4c6e80bca92f90369c680464617d4fc0fbd8d4cd[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 8 20:20:10 2024 +0530
+
+    cmd
+
+[33mcommit d2abb9537ffd615e57294003c3cbfc8381e61d50[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 8 20:13:14 2024 +0530
+
+    http-sever
+
+[33mcommit 14b9a66eaa2cb45d2cf3ce87f872a9befd24616f[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 8 18:48:37 2024 +0530
+
+    fs
+
+[33mcommit 1a1669949f59112c2f8bf3954231110231b6c5ee[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 8 01:08:45 2024 +0530
+
+    modules
+
+[33mcommit 465034759f9852147e6a9045c0684bc35f36a023[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 8 01:08:23 2024 +0530
+
+    modules
+
+[33mcommit 0e1f7cf09b463f482e5752f74f0c58ff4a7cdede[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Oct 7 20:45:18 2024 +0530
+
+    modules
+
+[33mcommit d2f4ff785802e2005e53914a33aea24e753fdc16[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Oct 7 14:44:00 2024 +0530
+
+    initialize
+
+[33mcommit 23ea07ada77e5847ac91c14881101809f71d4b43[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 5 17:47:53 2024 +0530
+
+    week 3 complete
+
+[33mcommit b967519b3242411996c022943373d0fbcc233a45[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Oct 5 00:08:55 2024 +0530
+
+    social media link target in newpage
+
+[33mcommit 94ccb0626c429f0c91bb30945fd8b686277a3727[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 2 19:13:39 2024 +0530
+
+    promise race
+
+[33mcommit 24929c0eca82abf52ae54d563752a6787ed8a849[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Oct 2 18:28:42 2024 +0530
+
+    promises
+
+[33mcommit 145ad1d1e93f023a9368a69a5d0fd2f490759601[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 1 23:08:38 2024 +0530
+
+    map questions
+
+[33mcommit 7f6e7e200ea4b89f92c5eddd1b0b6b541e80e205[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 1 22:38:18 2024 +0530
+
+    initial commit
+
+[33mcommit 7b78d9ab9bf78143360371b9f5f136dfe45fac1c[m
+Merge: bb8b3f3 2babf71
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 1 22:27:03 2024 +0530
+
+    Merge branch 'main' of https://github.com/abhiram-ar/bootcamp
+
+[33mcommit bb8b3f3d9e34a346f601d302edbc9b3d84ad605c[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Oct 1 22:26:39 2024 +0530
+
+    folder organization
+
+[33mcommit 77d4f15c3113891a827edb2cfe7f949e60644b22[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 27 14:12:19 2024 +0530
+
+    button fix
+
+[33mcommit 2babf7170438dc6de69b74e2eb9b5497cb0ef260[m
+Author: Abhiram S Sajeev <82314439+abhiram-ar@users.noreply.github.com>
+Date:   Thu Sep 26 23:31:20 2024 +0530
+
+    color fix
+
+[33mcommit 77bb231364ff10b47111ca9850a0de2228f8b253[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 26 12:36:26 2024 +0530
+
+    minor css tweeks
+
+[33mcommit 5735ad7b7a3f4629b4d57207f8bf6a0048d2d35f[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 26 12:36:04 2024 +0530
+
+    added optional profilepic
+
+[33mcommit 374916a5b269398cb5f3c58dd6598ed7b1714d5f[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 26 11:53:12 2024 +0530
+
+    compeleted final touchup
+
+[33mcommit 98cc67dd23ac1c1122b9eeb44e4734bbc671ff77[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 26 02:33:44 2024 +0530
+
+    implemented
+
+[33mcommit f929abd4688d9fa8e5067dce7d27819f81232712[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 26 00:27:45 2024 +0530
+
+    removed zonefiles
+
+[33mcommit 4f48608dacb76609fd6edf7b4966d18bf8f43ba8[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 26 00:27:21 2024 +0530
+
+    added email validation
+
+[33mcommit b47c4042f3705f3bc6c1c9ed6a1d139abe39fbc4[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 25 02:31:24 2024 +0530
+
+    added kochi geolocation in contacts
+
+[33mcommit c78687a6f5c3cae66d37e1666e5a82546385f00b[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 25 02:15:15 2024 +0530
+
+    added margin fix to skills session
+
+[33mcommit 48b8c8aac85f66774105fb5aaa7093cb68e9df33[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 25 02:08:23 2024 +0530
+
+    skill session added
+
+[33mcommit d2502791ebe05cfc4383a6b512adbd65c6fff08c[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 25 01:26:46 2024 +0530
+
+    added project
+
+[33mcommit 314704bae7871f73aa9e3798625fb7c387ef4b63[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 24 20:57:50 2024 +0530
+
+    added educataion
+
+[33mcommit 29bc195abaa057a25ebd6151adcf8f62f1d6ce9d[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 24 19:50:28 2024 +0530
+
+    added about
+
+[33mcommit f2c2bc959210ebca9b4859c5866f99e2f04fa13c[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 24 19:34:58 2024 +0530
+
+    added basic info and social links
+
+[33mcommit 9a260fc75b8fa60385064231c627d1bfe2acfc83[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 24 18:58:25 2024 +0530
+
+    reorder filestructure
+
+[33mcommit bc731c10ece5b09334cf4dea174b7053d81ba4ee[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 24 17:14:11 2024 +0530
+
+    added sidebar
+
+[33mcommit d96d89b347143ee144df1d077ac9147fefbeb4b2[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 24 16:56:04 2024 +0530
+
+    added modal
+
+[33mcommit b0a09a80fe3eb39582858935db235ee077f7a548[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 23 17:51:13 2024 +0530
+
+    add form input group
+
+[33mcommit ccc1185e236fa8a4725961d317a8dc8af47945ff[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 23 15:03:16 2024 +0530
+
+    cleared used project dir
+
+[33mcommit b44ef5bfbcbf49679b485ff06f8bc5fc29ed5fd6[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 23 15:02:08 2024 +0530
+
+    over flow fix
+
+[33mcommit b16bc1fda326049dd953cd9bf7c0ec89ea3aaf49[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 23 15:01:53 2024 +0530
+
+    spash screen margin fix
+
+[33mcommit 318f9c2537b4e9be60985e8f5f1b322b6d08e64f[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 23 14:44:57 2024 +0530
+
+    deleted some files
+
+[33mcommit 583826da9561aa97dfed166fc2a2c3387fcb6318[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Sep 22 02:41:21 2024 +0530
+
+    fully responsive
+
+[33mcommit df3fecb6672e13347ecefe8bc444f72e0ff02e13[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Sep 22 02:35:36 2024 +0530
+
+    responsive design
+
+[33mcommit be639c0deeb32d2110a6e88a298ff33d66a314ea[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Sep 22 00:23:43 2024 +0530
+
+    git restucture
+
+[33mcommit 9d358f551a9d18420e746a8d310040bd7fb76305[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Sep 21 18:16:04 2024 +0530
+
+    added reviews
+
+[33mcommit 4bb5333ff1b17fc36b3c677f21c3c1330a4dbceb[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Sep 21 18:15:37 2024 +0530
+
+    added reviews
+
+[33mcommit c7f35f074189a071aeb838123657d2be28285adf[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Sep 21 17:29:36 2024 +0530
+
+    added price
+
+[33mcommit 73d091da8a65ffdf99a895c90e208cd1186c5096[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Sep 21 17:28:59 2024 +0530
+
+    navbar
+
+[33mcommit c6f7989e093001b6d3387711ba6f061a9b4efdaa[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Sep 21 10:38:22 2024 +0530
+
+    added project files
+
+[33mcommit b984bce9e1f413c513463be36e0cde180ce4cc5b[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sat Sep 21 10:27:13 2024 +0530
+
+    grid par1, baisc grid, adjusing colum width, responsive col width, justifying cols
+
+[33mcommit 90be68aeda3d4f78d0157cac5d338529f88c3d59[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 20:08:52 2024 +0530
+
+    containers
+
+[33mcommit ef42918c0c3add42db850542a572f219d1056359[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 18:59:41 2024 +0530
+
+    week 1 review task
+
+[33mcommit 1429b98fe86997e0ca47ae161cdc3274be9e5c7e[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 18:58:55 2024 +0530
+
+    review tasks
+
+[33mcommit a600ee0624ac153c31ae73489cefe95a8d050ffe[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 18:58:19 2024 +0530
+
+    margin paddding border font-weight and shadow
+
+[33mcommit 9d8775fcce3beb15a2b7110c0d0e091d503f3a3a[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 18:56:54 2024 +0530
+
+    basics
+
+[33mcommit 30db4854a9f72fc875f0e888bbd63d2030aa460b[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 14:57:25 2024 +0530
+
+    added comments
+
+[33mcommit 2f12d7e9973ea842ae9ee6b1abb0020091a78e06[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 14:54:56 2024 +0530
+
+    text color size and bg
+
+[33mcommit 5736f52ab7ff75250179ab26ca112fb63283c399[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 13:09:26 2024 +0530
+
+    setup working folders
+
+[33mcommit 40dd0dd109913f7b65b48965bd0034cf6428ced4[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Fri Sep 20 12:58:01 2024 +0530
+
+    first week review task
+
+[33mcommit f4fecc027323d58c77f74f40f444c600a753859e[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 19 11:16:40 2024 +0530
+
+    folder renamed
+
+[33mcommit 2f7a40d4d3500d8b25d50e56c3653c751447e2a2[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 19 10:07:25 2024 +0530
+
+    screenshort update
+
+[33mcommit 809b86c3be8b097c2a33d6dbca68b00f9a92d4d4[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 19 09:53:09 2024 +0530
+
+    screenshort refreshed
+
+[33mcommit 0a53400cfd1b3b96205eacba0d0d67937f6aaa31[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 19 09:32:51 2024 +0530
+
+    removed unsupported css
+
+[33mcommit 6d3df993ff715eb203442af31f94fdd94c2ba91c[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 19 09:30:30 2024 +0530
+
+    update
+
+[33mcommit f2a1822a16a4be5b35319d2cf5d3e9efd449b560[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 18 23:43:06 2024 +0530
+
+    added comments
+
+[33mcommit 2b32aab3eb40ab47da5d369166f93e75fbafeb7b[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 18 12:52:23 2024 +0530
+
+    svg for features
+
+[33mcommit accc8ab5ffe9afe9156f13fdb7b83ff8562d45f9[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 18 12:36:19 2024 +0530
+
+    container rounded
+
+[33mcommit efb1befe8b41aa5323c364e98ac63cf9809b60bb[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 18 12:35:30 2024 +0530
+
+    container rounded
+
+[33mcommit e923f9131e0fb4adc3df4e8a4c7e733cd1a69eee[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 18 12:31:10 2024 +0530
+
+    added arc
+
+[33mcommit 040993824361f95099d5c6f992eed102a0dc8c45[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 17 00:30:21 2024 +0530
+
+    ready to host
+
+[33mcommit ec6de855a5e3fefe3f7565200f77441b91c30ee0[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 17 00:03:03 2024 +0530
+
+    finalize
+
+[33mcommit c9927dfc8e9e6f3051a8de14616d419e90540f6f[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 16 23:59:24 2024 +0530
+
+    added ranking for all poster
+
+[33mcommit d00f4863d7edf0c4ba663e2d040c4756610fcc33[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 16 23:57:16 2024 +0530
+
+    typo
+
+[33mcommit ad7be3ff3def5a1916bf752e844823902f2f6bf0[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 16 23:56:52 2024 +0530
+
+    numbering posters
+
+[33mcommit 43c699458cc79d70a95bd72595f1bbfa6fefe42b[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 16 23:56:36 2024 +0530
+
+    ranking for posters
+
+[33mcommit 7d8428bd603d5640efee13f98113a07e8535c1ba[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 16 23:42:29 2024 +0530
+
+    posistion fix
+
+[33mcommit ed6996a519dc11fff705747901e3998caac392c9[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Sep 16 23:27:22 2024 +0530
+
+    added favicon
+
+[33mcommit ef75f880114445e4b8714ebc130aabc06c631f40[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Thu Sep 12 13:20:02 2024 +0530
+
+    laptop poster size fix
+
+[33mcommit 4b5bf92c666dc422f6738454261153b66db8a0b3[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 11 10:17:42 2024 +0530
+
+    dumo
+
+[33mcommit 85b1abe4eb92c264e286cb0216a3d07669f68480[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 11 01:43:57 2024 +0530
+
+    added legal notes session
+
+[33mcommit 61ece4df6a858a61bb9d84f5900fcd71b8595318[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 11 01:33:39 2024 +0530
+
+    added footer
+
+[33mcommit 6db0bba36a89a85ceaae1941535dc6dc5aac298b[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Wed Sep 11 00:29:50 2024 +0530
+
+    zerodha varasity session
+
+[33mcommit fe05cfab9ecaa6dc0b8f92e11989bab275421ca3[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 10 23:28:21 2024 +0530
+
+    flush
+
+[33mcommit 4df00ea7d07bac7fea8c5818098bb18f60006c02[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 10 21:26:07 2024 +0530
+
+    files
+
+[33mcommit fe5682400c50959a3543f4299e0df1e2e2167830[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Sep 10 21:10:21 2024 +0530
+
+    push
+
+[33mcommit a836b6f29a8ff9e2801483a91ef9c583ddb8890c[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Aug 27 23:00:23 2024 +0530
+
+    added ss
+
+[33mcommit 528f291543be6279d8e4725b150cd4b4746c6c92[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Tue Aug 27 22:58:42 2024 +0530
+
+    added ss of page
+
+[33mcommit 28ba4a8d01c719e2ac9334ed96f7263363e0e4e5[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Aug 26 20:54:22 2024 +0530
+
+    netflix 75% complete
+
+[33mcommit f802bd632ba24cc3ce91e7a523a031e4bfc2ef4d[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Aug 26 20:53:52 2024 +0530
+
+    netflix 75% complete
+
+[33mcommit 72abb1cb65f4610af1f9b0bd2648e875113104ca[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Aug 26 03:21:30 2024 +0530
+
+    netflix intro done
+
+[33mcommit c05a5b8b5a32bb104a9b72116c0cd235e6512a15[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Mon Aug 26 01:48:35 2024 +0530
+
+    moving to project 2
+
+[33mcommit 4fef7d9350c4b0f3663f9e87618181825730c335[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Aug 25 21:29:16 2024 +0530
+
+    completed facebook
+
+[33mcommit 81cd3979377c3acdfff60398d0557ea00cfd9862[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Aug 25 19:47:27 2024 +0530
+
+    stated on facebook
+
+[33mcommit acd12fe9a88b9d23e6fccbe4e93f46271d9a7280[m
+Author: abhiram-ar <abhiram2001.ars@gmail.com>
+Date:   Sun Aug 25 19:19:15 2024 +0530
+
+    first commit
