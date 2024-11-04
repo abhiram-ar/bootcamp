@@ -1,0 +1,21 @@
+form{
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 5em auto;
+}
+input{
+    padding: 0.5em 2em;
+
+}
+
+button{
+    padding: 0.5em 1.25em;
+    border-radius: 5%;
+    background-color: blueviolet;
+    border: none;
+    color: whitesmoke;
+}

@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
-
+import "./App.css"
 export default function App() {
     const [name, setName] = useState("");
     const inputRef = useRef(null);
 
     useEffect(() => {
         inputRef.current.focus();
-    });
+    }, []);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -19,7 +19,7 @@ export default function App() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="in">enter your name</label>
+            <label htmlFor="in">Enter your name</label>
             <input
                 id="in"
                 ref={inputRef}
