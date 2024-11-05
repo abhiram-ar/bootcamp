@@ -1,0 +1,170 @@
+import React, { useState, useEffect } from "react";
+import { Trash2, Check, Plus, Edit, Save, X } from "lucide-react";
+
+const TodoApp = () => {
+    const [todos, setTodos] = useState(() => {
+        const savedTodos = localStorage.getItem("todos");
+        return savedTodos ? JSON.parse(savedTodos) : [];
+    });
+
+    const [newTodo, setNewTodo] = useState("");
+    const [editingTodoId, setEditingTodoId] = useState(null);
+    const [editingTodoText, setEditingTodoText] = useState("");
+
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }, [todos]);
+
+    const addTodo = (e) => {
+        e.preventDefault();
+        if (!newTodo.trim()) return;
+
+        setTodos([
+            ...todos,
+            {
+                id: Date.now(),
+                text: newTodo.trim(),
+                completed: false,
+            },
+        ]);
+        setNewTodo("");
+    };
+
+    const toggleTodo = (id) => {
+        setTodos(
+            todos.map((todo) =>
+                todo.id === id ? { ...todo, completed: !todo.completed } : todo
+            )
+        );
+    };
+
+    const deleteTodo = (id) => {
+        setTodos(todos.filter((todo) => todo.id !== id));
+    };
+
+    const startEditing = (id, text) => {
+        setEditingTodoId(id);
+        setEditingTodoText(text);
+    };
+
+    const saveEditedTodo = () => {
+        console.log(editingTodoText)
+        if (!editingTodoText.trim()) return null;
+
+        
+        setTodos(
+            todos.map((todo) =>
+                todo.id === editingTodoId
+                    ? { ...todo, text: editingTodoText.trim() }
+                    : todo
+            )
+        );
+        setEditingTodoId(null);
+        setEditingTodoText("");
+    };
+
+    const cancelEditing = () => {
+        setEditingTodoId(null);
+        setEditingTodoText("");
+    };
+
+    return (
+        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg" style={{fontFamily: ""}}>
+            <h1 className="text-2xl font-bold mb-4 text-gray-800">Todo List</h1>
+
+            <form onSubmit={addTodo} className="flex gap-2 mb-4">
+                <input
+                    type="text"
+                    value={newTodo}
+                    onChange={(e) => setNewTodo(e.target.value)}
+                    placeholder="Add a new todo..."
+                    className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button
+                    type="submit"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                    <Plus className="w-5 h-5" />
+                </button>
+            </form>
+
+            <ul className="space-y-2">
+                {todos.map((todo) => (
+                    <li
+                        key={todo.id}
+                        className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg"
+                    >
+                        <button
+                            onClick={() => toggleTodo(todo.id)}
+                            className={`p-1 rounded-full ${
+                                todo.completed
+                                    ? "bg-green-500 text-white"
+                                    : "bg-gray-200"
+                            }`}
+                        >
+                            <Check className="w-4 h-4" />
+                        </button>
+
+                        {editingTodoId === todo.id ? (
+                            <div className="flex-1 flex items-center gap-2">
+                                <input
+                                    type="text"
+                                    value={editingTodoText}
+                                    onChange={(e) =>
+                                        setEditingTodoText(e.target.value)
+                                    }
+                                    className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                />
+                                <button
+                                    onClick={saveEditedTodo}
+                                    className="p-1 text-green-500 hover:bg-green-100 rounded-full"
+                                >
+                                    <Save className="w-4 h-4" />
+                                </button>
+                                <button
+                                    onClick={cancelEditing}
+                                    className="p-1 text-gray-500 hover:bg-gray-100 rounded-full"
+                                >
+                                    <X className="w-4 h-4" />
+                                </button>
+                            </div>
+                        ) : (
+                            <span
+                                className={`flex-1 ${
+                                    todo.completed
+                                        ? "line-through text-gray-500"
+                                        : "text-gray-800"
+                                }`}
+                            >
+                                {todo.text}
+                            </span>
+                        )}
+
+                        <div className="flex gap-2">
+                            <button
+                                onClick={() => startEditing(todo.id, todo.text)}
+                                className="p-1 text-yellow-500 hover:bg-yellow-100 rounded-full"
+                            >
+                                <Edit className="w-4 h-4" />
+                            </button>
+                            <button
+                                onClick={() => deleteTodo(todo.id)}
+                                className="p-1 text-red-500 hover:bg-red-100 rounded-full"
+                            >
+                                <Trash2 className="w-4 h-4" />
+                            </button>
+                        </div>
+                    </li>
+                ))}
+            </ul>
+i
+            {todos.length === 0 && (
+                <p className="text-center text-gray-500 mt-4">
+                    No todos yet. Add one above!
+                </p>
+            )}
+        </div>
+    );
+};
+
+export default TodoApp;
