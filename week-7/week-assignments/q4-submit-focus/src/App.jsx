@@ -12,6 +12,8 @@ export default function App() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        if (!e.target.username.value.trim()) return
+
         console.log(e.target.username.value);
 
         e.target.username.value = "";

@@ -1,4 +1,4 @@
-import "./App.css"
+import "./App.css";
 
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ export default function App() {
     }
 
     function handleDecrement() {
-        if (count > 0 ) setCount(count - 1);
+        if (count > 0) setCount(count - 1);
     }
 
     return (

@@ -1,4 +1,3 @@
-
 export default function ProfileCard({ name, email }) {
     return (
         <div className="profile-card">

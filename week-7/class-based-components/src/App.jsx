@@ -16,7 +16,7 @@ class Todo extends Component {
         this.setState((prevState) => ({ count: prevState.count - 1 }));
     }
 
-    handleIncrement() {
+    handleIncrement() { 
         this.setState((prevState) => ({ count: prevState.count + 1 }));
     }
 
