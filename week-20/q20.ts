@@ -16,5 +16,4 @@ for (let i = 0; curr <= num; i++) {
         curr++
     }
     console.log(row.join(" "))
-
 }
