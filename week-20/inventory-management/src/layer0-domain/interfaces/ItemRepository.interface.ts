@@ -1,4 +1,4 @@
-import { Item } from "../core/entities/item.entity";
+import { Item } from "../entities/item.entity";
 
 export interface IItemRepository {
     create(item: Item): Promise<Item>;

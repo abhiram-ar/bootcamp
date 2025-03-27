@@ -1,18 +1,11 @@
-import express from 'express'
+import { connectDB } from "./config/mongoDB.config";
+import app from "./app";
 
-let app = express()
-
-app.get('/', (req, res)=> {
-    res.json({messge: "hi"})
-})
-
-
-let promise = new Promise((res)=> {
-    res("hello")
-})
-
-
-
-app.listen(3000, ()=> {
-    console.log("Server listening on port 3000")
-})
+app.listen(3000, async () => {
+    console.log("server start listening on port 3000");
+    try {
+        await connectDB();
+    } catch (error) {
+        console.log("Error staring DB");
+    }
+});

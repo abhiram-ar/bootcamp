@@ -1,4 +1,4 @@
-import { IItemRepository } from "../../interfaces/ItemRepository.interface";
+import { IItemRepository } from "../interfaces/ItemRepository.interface";
 import { Item } from "../entities/item.entity";
 
 export class ItemUseCase {

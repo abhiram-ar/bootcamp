@@ -1,9 +1,8 @@
-import { it } from "node:test";
-import { Item } from "../../core/entities/item.entity";
-import { IItemRepository } from "../../interfaces/ItemRepository.interface";
-import itemModel from "./models/item.model";
+import { Item } from "../../layer0-domain/entities/item.entity";
+import { IItemRepository } from "../../layer0-domain/interfaces/ItemRepository.interface";
+import itemModel from "../database/models/item.model";
 
-class MongoDBRepository implements IItemRepository {
+export class MongoDBRepository implements IItemRepository {
     async create(item: Item): Promise<Item> {
         const newItem = new itemModel(item);
         await newItem.save();
@@ -19,27 +18,14 @@ class MongoDBRepository implements IItemRepository {
     async getItemById(id: string): Promise<Item | null> {
         let item = await itemModel.findById(id);
         return item
-            ? new Item(
-                  item.id,
-                  item.name,
-                  item.description,
-                  item.quantity,
-                  item.price
-              )
+            ? new Item(item.id, item.name, item.description, item.quantity, item.price)
             : null;
     }
 
     async getAllItems(limit?: number, offSet?: number): Promise<Item[]> {
         let items = await itemModel.find();
         return items.map(
-            (item) =>
-                new Item(
-                    item.id,
-                    item.name,
-                    item.description,
-                    item.quantity,
-                    item.price
-                )
+            (item) => new Item(item.id, item.name, item.description, item.quantity, item.price)
         );
     }
 
