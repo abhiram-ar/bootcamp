@@ -30,21 +30,31 @@ export class MongoDBRepository implements IItemRepository {
     }
 
     async update(id: string, item: Partial<Item>): Promise<Item | null> {
-        let updatedItem = await itemModel.findByIdAndUpdate(id, item, {
-            new: true,
-        });
-        return updatedItem
-            ? new Item(
-                  updatedItem.id,
-                  updatedItem.name,
-                  updatedItem.description,
-                  updatedItem.quantity,
-                  updatedItem.price
-              )
-            : null;
+        try {
+            let updatedItem = await itemModel.findByIdAndUpdate(id, item, {
+                new: true,
+            });
+            return updatedItem
+                ? new Item(
+                      updatedItem.id,
+                      updatedItem.name,
+                      updatedItem.description,
+                      updatedItem.quantity,
+                      updatedItem.price
+                  )
+                : null;
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
     }
     async delete(id: string): Promise<boolean> {
-        let itemDeleted = await itemModel.findByIdAndDelete(id);
-        return itemDeleted ? true : false;
+        try {
+            let itemDeleted = await itemModel.findByIdAndDelete(id);
+            return itemDeleted ? true : false;
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
     }
 }

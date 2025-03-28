@@ -1,22 +1,11 @@
-import { IItemRepository } from "../interfaces/ItemRepository.interface";
-import { Item } from "../entities/item.entity";
+import { IItemRepository } from "./../layer0-domain/interfaces/ItemRepository.interface";
+import { Item } from "./../layer0-domain/entities/item.entity";
 
 export class ItemUseCase {
     constructor(private ItemRepository: IItemRepository) {}
 
-    async createItem(
-        name: string,
-        description: string,
-        quantity: number,
-        price: number
-    ) {
-        let newItem = new Item(
-            Date.now().toString(),
-            name,
-            description,
-            quantity,
-            price
-        );
+    async createItem(name: string, description: string, quantity: number, price: number) {
+        let newItem = new Item(Date.now().toString(), name, description, quantity, price);
         return this.ItemRepository.create(newItem);
     }
 
