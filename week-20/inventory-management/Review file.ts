@@ -57,6 +57,6 @@ function genericArr<T>(num1: T, num2: T): [T, T] {
     return [num1, num2];
 }
 
-function genericTwoTypesArr<T, S>(num1: T, num2: S): [T, S] {
+function genericTwoTypesArr<T, S>(num1: T, num2: S): [T, S] {  
     return [num1, num2];
 }
